@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "JS Learn Progress Tracker",
+    "version": "1.0",
+    "description": "Отслеживает прогресс на learn.javascript.ru",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://learn.javascript.ru/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
